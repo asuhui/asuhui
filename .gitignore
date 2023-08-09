@@ -1,4 +1,5 @@
 *.tmp
 /logs/*
-./out/*
+.out/*
 .idea
+./src/src.iml
