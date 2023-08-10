@@ -1,4 +1,4 @@
-package com.sallen.cm;
+package com.sallen.cn;
 
 import java.util.Scanner;
 
