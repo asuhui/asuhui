@@ -1,5 +1,7 @@
 package cn.fii.demo.entity;
 
+import java.util.Objects;
+
 public class Dog extends Animal {
     private String strain;
 
@@ -30,6 +32,20 @@ public class Dog extends Animal {
         return "Dog{" +
                 "strain='" + strain + '\'' +
                 "} " + super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Dog dog = (Dog) o;
+        return Objects.equals(strain, dog.strain);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), strain);
     }
 }
 

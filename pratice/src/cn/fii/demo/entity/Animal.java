@@ -1,5 +1,7 @@
 package cn.fii.demo.entity;
 
+import java.util.Objects;
+
 public class Animal {
     private String name;
     private int health;
@@ -48,6 +50,21 @@ public class Animal {
                 ", health=" + health +
                 ", love=" + love +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animal animal = (Animal) o;
+        return health == animal.health &&
+                love == animal.love &&
+                Objects.equals(name, animal.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, health, love);
     }
 
     public void print() {

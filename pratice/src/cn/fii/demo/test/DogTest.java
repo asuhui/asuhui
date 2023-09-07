@@ -8,6 +8,8 @@ public class DogTest {
         Dog dog = new Dog("sallen", 100, 0, "Q");
         dog.setHealth(-100);
         Penguin penguin = new Penguin("hello", 20, 2, "P");
+        Penguin penguin1 = new Penguin("hello", 20, 2, "P");
+        System.out.println(penguin.equals(penguin1));
         penguin.setSex(Penguin.SEX_MALE);
         System.out.println(dog);
         System.out.println(penguin);
