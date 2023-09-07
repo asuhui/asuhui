@@ -41,6 +41,15 @@ public class Animal {
         this.love = love;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", health=" + health +
+                ", love=" + love +
+                '}';
+    }
+
     public void print() {
         System.out.println("I am an animal");
         System.out.print("name:" + this.name + " " + "health:" + this.health + " " + "love:" + this.love + " ");

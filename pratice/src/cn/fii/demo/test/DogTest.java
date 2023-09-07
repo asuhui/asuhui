@@ -9,6 +9,8 @@ public class DogTest {
         dog.setHealth(-100);
         Penguin penguin = new Penguin("hello", 20, 2, "P");
         penguin.setSex(Penguin.SEX_MALE);
+        System.out.println(dog);
+        System.out.println(penguin);
 //        dog.name = "sallen";
 //        dog.health = 100;
 //        dog.love = 0;

@@ -26,5 +26,12 @@ public class Penguin extends Animal {
         super.print();
         System.out.println("sex:" + this.sex + " ");
     }
+
+    @Override
+    public String toString() {
+        return "Penguin{" +
+                "sex='" + sex + '\'' +
+                "} " + super.toString();
+    }
 }
 

@@ -24,5 +24,12 @@ public class Dog extends Animal {
         super.print();
         System.out.println("strain:" + this.strain + " ");
     }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "strain='" + strain + '\'' +
+                "} " + super.toString();
+    }
 }
 
