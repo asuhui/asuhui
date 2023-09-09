@@ -30,6 +30,11 @@ public class Penguin extends Animal {
     }
 
     @Override
+    public void ab() {
+
+    }
+
+    @Override
     public String toString() {
         return "Penguin{" +
                 "sex='" + sex + '\'' +

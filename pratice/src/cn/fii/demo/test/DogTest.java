@@ -13,6 +13,8 @@ public class DogTest {
         penguin.setSex(Penguin.SEX_MALE);
         System.out.println(dog);
         System.out.println(penguin);
+        System.out.println(penguin.getClass());
+        System.out.println(dog.getClass());
 //        dog.name = "sallen";
 //        dog.health = 100;
 //        dog.love = 0;

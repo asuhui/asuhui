@@ -2,7 +2,7 @@ package cn.fii.demo.entity;
 
 import java.util.Objects;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int health;
     private int love;
@@ -71,4 +71,6 @@ public class Animal {
         System.out.println("I am an animal");
         System.out.print("name:" + this.name + " " + "health:" + this.health + " " + "love:" + this.love + " ");
     }
+
+    public abstract void ab();
 }
