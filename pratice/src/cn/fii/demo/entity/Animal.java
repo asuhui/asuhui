@@ -73,4 +73,6 @@ public abstract class Animal {
     }
 
     public abstract void ab();
+
+    public abstract void eat();
 }

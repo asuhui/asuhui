@@ -52,5 +52,12 @@ public class Dog extends Animal {
     public int hashCode() {
         return Objects.hash(super.hashCode(), strain);
     }
+
+    @Override
+    public void eat() {
+        System.out.println("吃狗粮");
+        this.setHealth(this.getHealth() + 3);
+        this.print();
+    }
 }
 

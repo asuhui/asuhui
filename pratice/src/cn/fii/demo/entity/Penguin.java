@@ -55,5 +55,12 @@ public class Penguin extends Animal {
     public int hashCode() {
         return Objects.hash(sex);
     }
+
+    @Override
+    public void eat() {
+        System.out.println("吃鱼");
+        this.setHealth(this.getHealth() + 5);
+        this.print();
+    }
 }
 

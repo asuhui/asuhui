@@ -1,12 +1,14 @@
 package cn.fii.demo.test;
 
+import cn.fii.demo.entity.Animal;
 import cn.fii.demo.entity.Dog;
+import cn.fii.demo.entity.Master;
 import cn.fii.demo.entity.Penguin;
 
 public class DogTest {
     public static void main(String[] args) {
-        Dog dog = new Dog("sallen", 100, 0, "Q");
-        dog.setHealth(-100);
+        Master master = new Master();
+        Dog dog = new Dog("sallen", 90, 0, "Q");
         Penguin penguin = new Penguin("hello", 20, 2, "P");
         Penguin penguin1 = new Penguin("hello", 20, 2, "P");
         System.out.println(penguin.equals(penguin1));
@@ -23,7 +25,14 @@ public class DogTest {
 //        penguin.health =20;
 //        penguin.love=2;
 //        penguin.sex ="P";
-        dog.print();
-        penguin.print();
+//        dog.print();
+//        penguin.print();
+        master.feed(dog);
+        master.feed(penguin);
+
+        Animal a1 = master.adopt("1");
+        a1.print();
+        Animal a2 = master.adopt("2");
+        a2.print();
     }
 }
