@@ -9,8 +9,8 @@ public class DogTest {
     public static void main(String[] args) {
         Master master = new Master();
         Dog dog = new Dog("sallen", 90, 0, "Q");
-        Penguin penguin = new Penguin("hello", 20, 2, "P");
-        Penguin penguin1 = new Penguin("hello", 20, 2, "P");
+        Penguin penguin = new Penguin("hello", 20, 1, "P");
+        Penguin penguin1 = new Penguin("hello", 20, 1, "P");
         System.out.println(penguin.equals(penguin1));
         penguin.setSex(Penguin.SEX_MALE);
         System.out.println(dog);
@@ -34,5 +34,10 @@ public class DogTest {
         a1.print();
         Animal a2 = master.adopt("2");
         a2.print();
+        System.out.println("##########");
+        master.playing(dog);
+        dog.print();
+        master.playing(penguin);
+        penguin.print();
     }
 }

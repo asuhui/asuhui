@@ -59,5 +59,10 @@ public class Dog extends Animal {
         this.setHealth(this.getHealth() + 3);
         this.print();
     }
+
+    public void CatchingFlyDisc() {
+        this.setHealth(this.getHealth() - 5);
+        this.setLove(this.getLove() + 5);
+    }
 }
 

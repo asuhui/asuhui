@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Penguin extends Animal {
     //常量定义
-    public static final String SEX_MALE = "Q";
+    public static final String SEX_MALE = "M";
     private String sex;
 
     public Penguin() {
@@ -61,6 +61,11 @@ public class Penguin extends Animal {
         System.out.println("吃鱼");
         this.setHealth(this.getHealth() + 5);
         this.print();
+    }
+
+    public void swimming() {
+        this.setHealth(this.getHealth() - 3);
+        this.setLove(this.getLove() + 3);
     }
 }
 

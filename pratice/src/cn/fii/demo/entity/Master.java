@@ -18,4 +18,15 @@ public class Master {
         }
         return animal;
     }
+
+    public void playing(Animal animal) {
+        if (animal instanceof Dog) {
+            Dog dog = (Dog) animal;
+            dog.CatchingFlyDisc();
+        }
+        if (animal instanceof Penguin) {
+            Penguin penguin = (Penguin) animal;
+            penguin.swimming();
+        }
+    }
 }
