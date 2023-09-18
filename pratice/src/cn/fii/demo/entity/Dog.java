@@ -8,6 +8,12 @@ public class Dog extends Animal {
     public Dog() {
     }
 
+    /**
+     * @param name
+     * @param health
+     * @param love
+     * @param strain
+     */
     public Dog(String name, int health, int love, String strain) {
         super(name, health, love);
         this.strain = strain;
@@ -20,6 +26,7 @@ public class Dog extends Animal {
     public void setStrain(String strain) {
         this.strain = strain;
     }
+
 
     @Override
     public void print() {
