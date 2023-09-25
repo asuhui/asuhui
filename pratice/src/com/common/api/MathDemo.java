@@ -1,6 +1,9 @@
-package com.num.math;
+package com.common.api;
 
 import java.util.Scanner;
+/*
+ * Math java.lang包下
+ * */
 
 public class MathDemo {
     public static void main(String[] args) {

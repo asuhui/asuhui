@@ -1,6 +1,17 @@
-package com.sallen.cn;
+package com.common.api;
 
-public class Pack {
+/*
+ * 基本数据类型包装类(都在java.lang包下)
+ * byte->Byte
+ * short->Short
+ * int->Integer
+ * long->Long
+ * float->Float
+ * double->Double
+ * char->Character
+ * boolean->Boolean
+ * */
+public class BasicClassPackage {
     public static void main(String[] args) {
         int i = new Integer(10);// 创建包装类的对象
         Integer ii = 10; // 自动打包
