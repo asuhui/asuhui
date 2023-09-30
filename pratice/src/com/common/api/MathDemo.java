@@ -23,16 +23,16 @@ public class MathDemo {
         System.out.println("c:");
         Scanner sc3 = new Scanner(System.in);
         double c = sc.nextInt();
-        double deta = Math.pow(b, 2) - 4 * a * c;
-        if (deta < 0) {
+        double delta = Math.pow(b, 2) - 4 * a * c;
+        if (delta < 0) {
             System.out.println("无解");
-        } else if (deta == 0) {
+        } else if (delta == 0) {
             double x = -b / (2 * a);
             System.out.println("此方程只有一个解");
             System.out.println("解是：x=" + x);
         } else {
-            double x1 = -b + Math.sqrt(deta) / (2 * a);
-            double x2 = -b - Math.sqrt(deta) / (2 * a);
+            double x1 = -b + Math.sqrt(delta) / (2 * a);
+            double x2 = -b - Math.sqrt(delta) / (2 * a);
             System.out.println("此方程只有两个解");
             System.out.println("解是：x1=" + x1);
             System.out.println("解是：x2=" + x2);

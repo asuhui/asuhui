@@ -2,14 +2,14 @@ package com.common.api;
 
 /*
  * 基本数据类型包装类(都在java.lang包下)
- * byte->Byte
- * short->Short
- * int->Integer
- * long->Long
- * float->Float
- * double->Double
- * char->Character
- * boolean->Boolean
+ * byte->Byte 1 byte
+ * short->Short 2 byte
+ * int->Integer 4 byte
+ * long->Long 8 byte
+ * float->Float 4 byte
+ * double->Double 8 byte
+ * char->Character 2 byte
+ * boolean->Boolean 1 byte
  * */
 public class BasicClassPackage {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class BasicClassPackage {
         long l = Long.parseLong("12323131313133");
         System.out.println(l);
 
-        String str = "abcd";
+        String str = "abed";
         char cc = str.charAt(1);
         System.out.println(cc);
     }
