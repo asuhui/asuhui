@@ -15,7 +15,7 @@ public class GenericsDemo {
             System.out.println(s);
         }
 
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<String, String>();
         map.put("sha", "sxz");
         map.put("zhu", "zxt");
 
