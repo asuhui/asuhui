@@ -20,9 +20,9 @@ public class FileDemo {
             //System.out.println(file.isFile());//判断文件是否是文件
             //System.out.println(file.length());//查看文件大小
             //System.out.println(file.getName());
-            File parrentFile = file.getParentFile();
-            if (!parrentFile.exists()) {
-                parrentFile.mkdirs();
+            File parentFile = file.getParentFile();
+            if (!parentFile.exists()) {
+                parentFile.mkdirs();
             }
             file.createNewFile();
 
